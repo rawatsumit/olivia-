@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>james</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style>
+body{
+	background:#070d26;
+	}
+	nav strong{
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+	}
+	nav{
+	background:black;
+	}
+	nav p1{
+	font-weight:bold;
+	font-style:italic;
+	font-size:15px;
+	}
+	footer strong{
+	font-style:none;
+	font-size:20px;
+	font-weight:bold;
+	}
+	footer span{
+	font-style:italic;
+	font-size:15px;
+	font-weight:bold;
+	}
+	h2{
+	color:white;
+	font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Solitreo', cursive;
+font-family: 'Source Serif Pro', serif;	
+	margin-left:15px;
+	}
+	.info{
+	color:grey;
+	padding:5px;
+	margin:10px;
+	border:1px solid grey;
+	float:right;
+	}
+	footer{
+	background:linear-gradient(to bottom, black, #221e1e);
+	}
+	footer li:hover{
+	text-decoration:underline;
+	}
+	
+	.foot{
+	color:grey;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	}
+	.foot strong{
+	color:white;
+	font-size:18px;
+	}
+	footer ul {
+	line-height:35px;
+	font-size:15px;
+	list-style:none;
+	}
+	footer ul li a{
+	color:grey;
+	list-style:none;
+	text-decoration:none;
+	}
+	.info strong{
+	padding:10px;
+	color:white;
+	}
+	p{
+	margin:8px;
+	color:grey;
+	}
+	 @media(max-width:785px){
+	 .info img{
+	 margin:auto;
+	 width:70%;
+	 height:80%;
+	 }
+	 .info{
+	 border:none;
+	 width:90%;
+	 float:none;
+	 }
+	 }
+</style>
+
+</head>
+  <body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+       <div class="container-fluid">
+	     <img class='border rounded m-2' src='https://www.shutterstock.com/image-vector/olivia-playful-typographic-poster-scandi-260nw-1313949293.jpg' width='30' height='30'>
+         <a class="navbar-brand text-danger  " href="index.html"><strong>Olivia-</strong> <p1>The Story teller</p1></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Find by
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#writers">Writers</a></li>
+                <li><a class="dropdown-item" href="#genre">Genre </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#favourite">Olivia's favourite</a></li>
+              </ul>
+            </li>
+           </ul>
+		   <div class='box p-0'>
+		     <button class='btn btn-success' data-bs-toggle="modal" data-bs-target="#exampleModal">Write a review</button>
+			   
+		     <button class='btn btn-secondary' data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact us</button>		   
+		   </div>
+         </div>
+		 
+       </div>
+     </nav>
+	 
+	  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review about us..</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <i>Your feedback is value-able to us-</i>
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your Name</label>
+               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlTextarea1" class="form-label" required >Example textarea</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Write your review here...'></textarea>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Send</button>
+             </div>
+           </div>
+        </div>
+      </div>
+	  
+	  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Contact us..</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <i>We are here for you</i>
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your Full Name</label>
+               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your contact no.</label>
+               <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your Email</label>
+               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+            
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Send</button>
+             </div>
+           </div>
+        </div>
+      </div>
+    <div class='info'>
+	  <img class='m-5' src='https://i.insider.com/4e8f56386bb3f77346000046?width=600&format=jpeg' width='300' height='380'>
+	  <h3 class=' m-0 text-light text-center' >James Clear</h3><br>
+	
+	    <strong>Born</strong>January 22, 1986<br>
+	    <strong>Died</strong>Living	<br>
+	    <strong>Occupation</strong>Author<br>
+	    <strong>Spouse</strong><br>
+	    <strong>Place of birth</strong>Hamilton, OH<br>
+	    <strong>Website</strong><a href='https://jamesclear.com/about'>jamesclear.com<a><br>
+	    <strong>Genre</strong>Life Learning<br>
+	    <strong>Top work</strong>Atomic Habits<br>
+	</div>
+	
+	<div class='hero'>
+	<br>
+	<h1 class='text-center text-light'>James Clear</h1><hr>
+	<p >
+	James Clear is a writer and speaker focused on habits, decision making, and continuous improvement. He is the author of the no. 1 New York Times bestseller, Atomic Habits.<br> The book has sold over 5 million copies worldwide and has been translated into more than 50 languages.
+
+Clear is a regular speaker at Fortune 500 companies and his work has been featured in places like Time magazine, the New York Times, the Wall Street Journal and on CBS This Morning. His popular "3-2-1" email newsletter is sent out each week to more than 1 million subscribers.<br> You can learn more and sign up at jamesclear.com.<br><br><br>He is a celebrity self help author.
+American self-help author who has gained fame for his number one New York Times bestselling book Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones.<br><br> His work has been featured in Time magazine, the New York Times, and the Wall Street Journal.
+More information on James Clear can be found here. This article will clarify James Clear's Bio, Wikipedia, Age, Birthday, Height, and other information.
+	</p>
+	
+		</div>
+		 <br><br><br><br><br><br><br><br><br><br><br><br><br>
+	 <footer>
+	<br>
+	<span class='text-left m-2 text-danger mt-5'><strong>Olivia</strong> -The Story teller...</span><hr>
+	<div class='foot'>
+	<div class='footer1'>
+	  <ul>
+	    <li><strong>Olivia</strong></li>
+	    <li><a href='default.html'>About us</a></li>
+	    <li><a href='#writers'>Writers</a></li>
+	    <li><a href='#genre'>Genre</a></li>
+	    <li><a href='#favourite'>Top Picks</a></li>
+	    <li><a href='#quotes'>Quotes</a></li>
+      </ul>
+	</div>
+	<div class='footer1 m-2'>
+	  <ul>
+	    <li><strong>Contact us</strong></li>
+	    <li><a href='tel:12345678'>Call us</a></li>
+	    <li><a href='mailto:mailtosumitrawat13@gmail.com'>Mail us</a></li>
+	    <li><a href='https://www.google.com/maps/dir//Arjan+Garh,+National+Highway+236,+1,+Aya+Nagar,+Aya+Nagar+Phase+New,+Aya+Nagar+Phase+2,+Aya+Nagar,+New+Delhi,+Delhi+110047/@28.48088,77.12585,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d1ee09bf5f69f:0x41787a09e5d1afe7!2m2!1d77.12585!2d28.48088'>Directions</a></li>
+	    <li><a href='default.html'>Send review</a></li>
+	</div>
+	<div class='footer1 m-2'>
+	  <ul>
+	    <li><strong>Others</strong></li>
+	    <li><a href='ashneer.html'>Ashneer Grover</a></li>
+	    <li><a href='default.html'>Hary porter</a></li>
+	    <li><a href='default.html'>Love</a></li>
+	    <li><a href='default.html'>Cindrella </a></li>
+	    <li><a href='default.html'>Atomic habits</a></li>
+	    <li><a href='default.html'>The epic shit</a></li>
+      </ul>
+	</div>
+	<div class='footer1 m-2'>
+	  <ul>
+	    <li><strong>Social Media</strong></li>
+	    <li><a href='facebook.com'>Facebook </a></li>
+	    <li><a href='twitter.com'>Twitter</a></li>
+	    <li><a href='instagram.com'>Instagram</a></li>
+	    <li><a href='youtube.com'>YouTube</a> </li>
+      </ul>
+	</div>
+	</div><hr>
+	<p class='text-center text-secondary'>This website is created by sumit singh rawat<br>All rights reserved</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olivia-The story teller</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@600&family=Edu+NSW+ACT+Foundation:wght@400;600&family=Libre+Baskerville&family=Lobster&family=Oswald&family=Pacifico&family=Rowdies&family=Solitreo&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@600&family=Edu+NSW+ACT+Foundation:wght@400;600&family=Libre+Baskerville&family=Lobster&family=Orbitron:wght@400;500&family=Oswald&family=Pacifico&family=Rowdies&family=Solitreo&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+	<style>
+	body{
+	background:#070d26;
+	}
+	nav li:hover{
+	text-decoration:none;
+	}
+	nav strong{
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+	}
+	nav{
+	background:black;
+	}
+	nav p1{
+	font-weight:bold;
+	font-style:italic;
+	font-size:15px;
+	}
+	h2{
+	color:white;
+	font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Solitreo', cursive;
+font-family: 'Source Serif Pro', serif;	
+	margin-left:15px;
+	}
+	.quotes{
+	margin-bottom:5px;
+	justify-content:center;
+	flex-wrap:wrap;
+	display:flex;
+	}
+	.cont2{
+	display:flex;
+	justify-content:space-around;
+	}
+	.cont2 p{
+	color:#565664;
+	text-align:center;
+	font-weight:bold;
+	}
+
+	.cont3{
+	justify-content:space-around;
+	display:flex;
+	}
+	
+	.quote{
+	font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Solitreo', cursive;
+font-family: 'Source Serif Pro', serif;
+	max-width:250px;
+	min-width:250px;
+	font-weight:bold;
+	font-size:15px;
+	border:1px solid transparent;
+	border-radius:5px;
+	background:linear-gradient( to right bottom, #b39494, white);
+	margin:5px;
+	padding:5px;
+	}
+	.writer{
+	font-weight:none;
+	font-style:italic;
+	color:grey;
+	float:right;
+	font-size:10px;
+	}
+	.cont4{
+	margin-bottom:5px;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	display:flex;
+	}
+	.subcont4{
+	font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Solitreo', cursive;
+font-family: 'Source Serif Pro', serif;
+	background:#e7e2e2;
+	min-width:250px;
+	overflow:hidden;
+	border:1px solid #e7e2e2;
+	} 
+	footer{
+	background:linear-gradient(to bottom, black, #221e1e);
+	}
+	footer li:hover{
+	text-decoration:underline;
+	}
+	
+	.foot{
+	color:grey;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	}
+	.foot strong{
+	color:white;
+	font-size:18px;
+	}
+	footer ul {
+	line-height:35px;
+	font-size:15px;
+	list-style:none;
+	}
+	footer ul li a{
+	color:grey;
+	list-style:none;
+	text-decoration:none;
+	}
+	.cont4 a {
+	margin:10px;
+	border:0px solid transparent;
+	border-radius:10px;
+	width:90%;
+	height:100px;
+	background:url('https://cdn4.vectorstock.com/i/1000x1000/13/43/geometric-colorful-texture-background-vector-21931343.jpg');
+	}
+	
+	.cont4 a{
+	margin:10px;
+	border:0px solid transparent;
+	border-radius:10px;
+	width:90%;
+	height:100px;
+	background:url('https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?cs=srgb&dl=pexels-el%C4%ABna-ar%C4%81ja-3377405.jpg&fm=jpg');
+	}
+	
+	.cont4 a{
+	margin:10px;
+	width:90%;
+	height:100px;
+	border:0px solid transparent;
+	border-radius:10px;
+	background:url('https://www.shutterstock.com/image-vector/orange-background-wave-pattern-beautiful-260nw-1705405744.jpg');
+	}
+	
+	 .cont4 strong{
+	margin-right:15px;
+	font-size:40px;
+	color:black;
+	float:right;
+	}
+	.subcont3{
+	margin-left:10px;
+	}
+	
+	.cont4 p{
+	float:right;
+	margin-right:5px;
+	}
+h1{
+font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Solitreo', cursive;
+font-family: 'Source Serif Pro', serif;
+}
+    footer strong{
+	font-style:none;
+	font-size:20px;
+	font-weight:bold;
+	}
+	footer span{
+	font-style:italic;
+	font-size:15px;
+	font-weight:bold;
+	}
+	.heroimg{
+	width:100%;
+	height:700px;
+	}
+	.heroimg img{
+	z-index:-1;
+	position:absolute;
+	right:25px;
+	}
+	.red{
+	color:red;
+	}
+	.heroimg p{
+	text-transform:uppercase;
+    font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Solitreo', cursive;
+font-family: 'Source Serif Pro', serif;
+	z-index:-1;
+	float:left;
+	margin-left:35px;
+	margin-top:250px;
+	font-size:45px;
+	color:white;
+	}
+	@media(max-width:1100px){
+	.heroimg p{
+	font-size:25px;
+	}
+	}
+	.subcont3{
+	background:white;
+	border-radius:5px;
+	border:2px solid transparent;
+	}
+	.subcont3 img{
+	border-radius:5px;
+	}
+	.subcont3:hover{
+	transition:0.3s;
+	border:2px solid red;
+	}
+   @media(max-width:785px){
+   .heroimg p{
+	font-size:25px;
+	float:left;
+	margin-left:10px;
+	margin-top:150px;
+	}
+	   .heroimg img{
+	   width:300px;
+   height:300px;
+   }
+   .heroimg{
+	width:100%;
+	height:300px;
+	}
+	.quotes{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:start;
+	overflow-x:scroll;
+	}
+	.quote{
+	min-width:180px;
+	}
+	.quotes::-webkit-scrollbar{
+	display:none;
+	}
+	.cont3{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:start;
+	overflow-x:scroll;
+	}
+	.
+	.cont3::-webkit-scrollbar{
+	display:none;
+	}
+	
+	.subcont3:hover{
+	border:none;
+	}
+	.cont2{
+	display:flex;
+	justify-content:start;
+	flex-wrap:nowrap;
+	overflow-x:scroll;
+	}
+	.subcont2{
+	margin:12px;
+	}
+	.cont2::-webkit-scrollbar{
+	display:none;
+	}
+	
+	
+	}
+	</style>
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+       <div class="container-fluid">
+	     <img class='border rounded m-2' src='https://www.shutterstock.com/image-vector/olivia-playful-typographic-poster-scandi-260nw-1313949293.jpg' width='30' height='30'>
+         <a class="navbar-brand text-danger  " href="index.html"><strong>Olivia-</strong> <p1>The Story teller</p1></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Find by
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#writers">Writers</a></li>
+                <li><a class="dropdown-item" href="#genre">Genre </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#favourite">Olivia's favourite</a></li>
+              </ul>
+            </li>
+           </ul>
+		   <div class='box p-0'>
+		     <button class='btn btn-success' data-bs-toggle="modal" data-bs-target="#exampleModal">Write a review</button>
+			   
+		     <button class='btn btn-secondary' data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact us</button>		   
+		   </div>
+         </div>
+		 
+       </div>
+     </nav>
+	 
+	 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Write a review about us..</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <i>Your feedback is value-able to us-</i>
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your Name</label>
+               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlTextarea1" class="form-label" required >Example textarea</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Write your review here...'></textarea>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Send</button>
+             </div>
+           </div>
+        </div>
+      </div>
+	  
+	  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+          <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Contact us..</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <i>We are here for you</i>
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your Full Name</label>
+               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your contact no.</label>
+               <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+             <div class="mb-3 p-2">
+               <label for="exampleFormControlInput1" class="form-label">Enter your Email</label>
+               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+            
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Send</button>
+             </div>
+           </div>
+        </div>
+      </div>
+     <div class='heroimg'>
+	 <p><span class='red'>Think</span> before you <span class='text-success'>speak</span>, <br>Read before you <span class='red'>Think</span>...</p>
+	
+	<img src= "pngwing.com (2).png"	width='700' height='700'>
+    </div>
+	
+	<h1 class='text-success text-center mt-2'>Learn more..</h1>
+	<div class='cont1 mt-3 mb-5'>
+     <h2 class='text-left mt-4 ' id='favourite'>Olivia's picks  </h2>
+	<div class='cont3'>
+	  <div class='subcont3'>
+	  <a href='default.html'><img src='https://www.fnp.com/images/pr/x/v20210618144419/atomic-habits-the-international-bestseller_1.jpg' width='150' height='200'></a>
+	  </div>
+	  <div class='subcont3'>
+	  <a href='default.html'><img src='https://pagdandi.org/wp-content/uploads/2022/05/DoEpicShit_AnkurWariko.jpg' width='150' height='200'></a>
+	  </div>
+	  <div class='subcont3'>
+	  <a href='default.html'><img src='https://m.media-amazon.com/images/I/511NYjPiyWL._SX444_BO1,204,203,200_.jpg' width='150' height='200'></a>
+	  </div>
+	  <div class='subcont3'>
+	  <a href='default.html'><img src='https://bookbins.in/wp-content/uploads/2022/12/Doglapan-Ashneer-Grover-Buy-Online-Bookbins-1.png' width='150' height='200'></a>
+	  </div>
+	  <div class='subcont3'>
+	  <a href='default.html'><img src='https://m.media-amazon.com/images/I/41fCUzOLfJL.jpg' width='150' height='200'></a>
+	  </div><div class='subcont3'>
+	  <a href='default.html'><img src='https://rukminim1.flixcart.com/image/612/612/kialrww0-0/regionalbooks/v/a/o/harry-potter-and-the-cursed-child-parts-one-and-two-the-official-original-imafy4h9wvnuhytw.jpeg?q=70' width='150' height='200'></a>
+	  </div>
+	</div> 
+	 <h2 class='text-left mt-4 ' id='writers' >Some famous Writers</h2>
+	<div class='cont2 mt-2'>
+	  <div class='subcont2 '>
+	    <a href='stephan.html'><img class='border rounded-circle' src='https://hips.hearstapps.com/hmg-prod/images/gettyimages-187751114.jpg' width='95' height='95'>
+	    </a><p>Stephen Edwin </p>	
+	  </div>
+      <div class='subcont2 '>
+	    <a href='joanne.html'><img class='border rounded-circle' src='https://www.bloomsbury.com/media/r41o2jaa/j-k-rowling.png?width=500&height=500' width='95' height='95'>
+	    </a><p> joanne rowling</p>	
+	  </div>
+      <div class='subcont2 '>
+	    <a href='james.html'><img class='border rounded-circle' src='https://d2r68eeixpqexd.cloudfront.net/35fa75cb3c1b0a3756e161ba623a8104.jpg' width='95' height='95'>
+	    </a><p> James Clear </p>	
+	  </div>
+      <div class='subcont2 '>
+	    <a href='haruki.html'><img class='border rounded-circle' src='https://cdn8.openculture.com/wp-content/uploads/2014/08/19161130/free-murakami-stories-1024x764.png' width='95' height='95'>
+	   </a> <p>haruki murakami </p>	
+	  </div>
+      <div class='subcont2 '>
+	    <a href='R.K Narayana.html'><img class='border rounded-circle' src='https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/10/2021_10$largeimg_1980110256.jpg' width='95' height='95'>
+	    </a><p>R.K Narayana  </p>	
+	  </div>
+        <div class='subcont2 '>
+	    <a href='ashneer.html'><img class='border rounded-circle' src='https://media.licdn.com/dms/image/D4D03AQF7Ho_ryeoQNA/profile-displayphoto-shrink_800_800/0/1677988934559?e=2147483647&v=beta&t=q13Nb3eN2S7muUFT9gR415HLYLvBhJUvFENNQMHXOLU' width='95' height='95'>
+	 </a> <p>Ashneer Grover </p>	
+	  </div>
+	</div>
+     
+	
+	<h2 class='text-left mt-4 ' ID='genre' >Popular Genre  </h2>
+	<div class='cont4'>
+	  <a href='life.html'> <div class='subcont41'>
+	   <p><strong>Life Learning</strong><br>
+	  Ankur waariko | James clear | Doglapan
+	  </p>
+	  </div></a>
+	  <a href='story.html'><div class='subcont42'>
+	   <p><strong>Story books </strong><br>
+	  joanne rowling | Cinderella | Ruskin 
+	  </p>
+	  </div></a>
+	  <a href='bio.html'><div class='subcont43'>
+	   <p><strong>Life Learning</strong><br>
+	  joanne rowlingo | Julia | Nora Roberts
+	  </p>
+	  </div></a>
+	</div>
+	</div>
+	 <h2 class='text-left mt-0 ' id='quotes'>Some famous quotes</h2>
+	   <div class='quotes'>
+	    <div class='quote'>
+	      <p1>To live is the rarest thing in the world. Most people exist, that is all</p1><br><p class='writer'>~Oscar Wilde</i></p>
+	    </div>
+	    <div class='quote'>
+	      <p1>That it will never come again is what makes life so sweet </p1><br><p class='writer'>~ Emily Dickinson</i></p>
+	    </div>
+	    <div class='quote'>
+		  <p1>Pain is inevitable. Suffering is optional</p1><br><p class='writer'>~Haruki Murakami</i></p>
+	    </div>
+	    <div class='quote'>
+	  	  <p1>Be kind, for everyone you meet is fighting a hard battle</p1><br><p class='writer'>~Platok </i></p>
+	    </div>
+	    <div class='quote'>
+		  <p1>Unable are the loved to die for love is immortality</p1><br><p class='writer'>~Emily Dickinson</i></p>
+	    </div>
+	    <div class='quote'>
+		  <p1>Let me live, love, and say it well in good sentences</p1><br><p class='writer'>~Sylvia Plath </i></p>
+	    </div>
+	    <div class='quote'>
+		<p1>We are all broken, that's how the light gets in</p1><br><p class='writer'>~Ernest Hemingway</i></p>
+	    </div>
+	    <div class='quote'>
+		<p1>Start before you’re ready.</p1><br><p class='writer'>~ Steven Pressfield </i></p>
+	    </div>
+		<div class='quote'>
+		<p1>Love what you do, do what you love</p1><br><p class='writer'>~Anonymus  </i></p>
+	    </div>
+	    <div class='quote'>
+		<p1>First, find out what your hero wants, then just follow him!</p1><br><p class='writer'>~Ray Bradbury</i></p>
+	    </div>
+    </div>
+    
+    <footer>
+	<br>
+	<span class='text-left m-2 text-danger mt-5'><strong>Olivia</strong> -The Story teller...</span><hr>
+	<div class='foot'>
+	<div class='footer1'>
+	  <ul>
+	    <li><strong>Olivia</strong></li>
+	    <li><a href='default.html'>About us</a></li>
+	    <li><a href='#writers'>Writers</a></li>
+	    <li><a href='#genre'>Genre</a></li>
+	    <li><a href='#favourite'>Top Picks</a></li>
+	    <li><a href='#quotes'>Quotes</a></li>
+      </ul>
+	</div>
+	<div class='footer1 m-2'>
+	  <ul>
+	    <li><strong>Contact us</strong></li>
+	    <li><a href='tel:12345678'>Call us</a></li>
+	    <li><a href='mailto:mailtosumitrawat13@gmail.com'>Mail us</a></li>
+	    <li><a href='https://www.google.com/maps/dir//Arjan+Garh,+National+Highway+236,+1,+Aya+Nagar,+Aya+Nagar+Phase+New,+Aya+Nagar+Phase+2,+Aya+Nagar,+New+Delhi,+Delhi+110047/@28.48088,77.12585,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d1ee09bf5f69f:0x41787a09e5d1afe7!2m2!1d77.12585!2d28.48088'>Directions</a></li>
+	    <li><a href='default.html'>Send review</a></li>
+	</div>
+	<div class='footer1 m-2'>
+	  <ul>
+	    <li><strong>Others</strong></li>
+	    <li><a href='ashneer.html'>Ashneer Grover</a></li>
+	    <li><a href='default.html'>Hary porter</a></li>
+	    <li><a href='default.html'>Love</a></li>
+	    <li><a href='default.html'>Cindrella </a></li>
+	    <li><a href='default.html'>Atomic habits</a></li>
+	    <li><a href='default.html'>The epic shit</a></li>
+      </ul>
+	</div>
+	<div class='footer1 m-2'>
+	  <ul>
+	    <li><strong>Social Media</strong></li>
+	    <li><a href='facebook.com'>Facebook </a></li>
+	    <li><a href='twitter.com'>Twitter</a></li>
+	    <li><a href='instagram.com'>Instagram</a></li>
+	    <li><a href='youtube.com'>YouTube</a> </li>
+      </ul>
+	</div>
+	</div><hr>
+	<p class='text-center text-secondary'>This website is created by sumit singh rawat<br>All rights reserved</p>
+	</footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
